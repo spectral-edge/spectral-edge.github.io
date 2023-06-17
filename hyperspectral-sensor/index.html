@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyperspectral Sensors, a Quick Guide</title>
+    <meta
+      name="description"
+      content="Hyperspectral image sensors in 2023, a quick guide."
+    />
+    <link rel="canonical" href="https://spectral-edge.github.io/hyperspectral-sensor/" />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container">
+        <h1>Hyperspectral Image Sensors</h1>
+        <p>
+            HSI sensors in 2023, a quick guide
+        </p>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <h2>The hyperspectral cube</h2>
+        <p> 
+            Hyperspectral sensors capture multiple narrow band images over a 
+            spectral range. While common RGB images have just three chromatic 
+            components, hyperspectral images feature many spectral bands, with 
+            a spectral dimension added to the two spatial dimensions characteristic 
+            of images. As a result, they’re usually referred to as hyperspectral 
+            cubes. 
+        </p>
+        <p>
+            As they contain information at different specific wavelengths, 
+            hyperspectral cubes enable the analysis and identification of objects 
+            based on their spectroscopic properties.
+        </p>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <h2>Types of hyperspectral sensors</h2>
+        <p>
+            There are three main methods of acquiring a hyperspectral cube: spatial 
+            scanning, spectral scanning, and snapshot imaging. They’re based on 
+            different sensor arrangements and acquisition principles. Each option 
+            results in a different tradeoff between spatial resolution, spectral 
+            resolution, and acquisition time.
+        </p>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <h2>Snapshot hyperspectral sensors</h2>
+        <p>
+
+            The last trend in the field, snapshot sensors collect the entire 3D 
+            datacube in a single shot without scanning. As a result, they don’t 
+            need any mechanical part and are free of scanning artifacts. They’re far 
+            more robust, compact, and cost effective than any other HSI sensing 
+            approach and have higher optical efficiency.
+        </p>
+        <p>
+            The best example of snapshot sensors are IMEC’s patented mosaic 
+            sensors that feature a mosaic of filters deposited or placed on top 
+            of standard sensors. Mosaics can be designed on purpose in different 
+            arrangements like 4x4 pixels (16 filters) or 5x5 pixels (25 filters). 
+            While they tradeoff spatial and spectral resolution, they’re the only 
+            option for real time snapshot hyperspectral imaging, a killing advantage 
+            for so many applications. 
+        </p>
+        <p>
+            We may find them in a great camera brand like Photonfocus for visible 
+            and NIR range. 
+            SpectralEdge provides a seamless connection and acquisition process with
+            these amazing HSI sensors, allowing to take the most of their impressive 
+            300 fps capability in e.g. a high speed product inspection and sorting    
+            use case.   
+        </p>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <h2>Spatial Scanning sensors</h2>
+        <p>
+            Spatial scanning is one of the traditional methods used for acquiring 
+            hyperspectral cubes. In this approach, many spectral bands are acquired 
+            for a single spatial line at a time by using a dispersive element like a 
+            prism or grating. The remaining spatial dimension is scanned through 
+            different approaches, such as using a moving mirror, a rotating prism or 
+            through camera or object movement. As a result, they are more prone to 
+            motion artifacts if there are movements or vibrations during the scanning 
+            process.
+        </p>
+        <p>
+            Spatial scanning cameras have been widely used for years and are known 
+            for their high spectral and spatial resolution. The scanning process can 
+            be time-consuming, especially for high-resolution images, which usually 
+            prevents real-time applications. The use of a dispersive element and 
+            even mechanical components make them bulky and expensive. However, they’re 
+            still the sensor of choice when spectral and spatial resolution are a must.
+        </p>
+      </div>
+    </section>
+    <section class="content">
+        <div class="container">
+          <h2>Spectral scanning sensors</h2>
+          <p>
+            Rather than scanning the spatial dimensions, spectral scanning sensors acquire 
+            the entire scene simultaneously. They usually achieve this by using a tunable 
+            filter to selectively transmit different spectral bands onto a 2D detector 
+            array in relatively short times. While they are often much faster than a spatial 
+            scanning sensor they’re not truly snapshot and may still suffer from motion 
+            artifacts. 
+          </p>
+          <p>
+            In the end, spectral scanning sensors trade-off their spatial and spectral 
+            resolution, as the performance of the tunable filters can affect these parameters.
+          </p>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <h2>Acquiring and handling the hyperspectral cube</h2>
+          <p>
+            When starting to work with hyperspectral sensors one major hurdle is the 
+            extraction of useful information from the sensor. First of all, we need to 
+            acquire the images. Next, we need to reconstruct the hyperspectral cube and 
+            finally we need to analyse it. Each of these steps require specialised 
+            software routines, that are usually hard to craft. Moreover, HSI images may 
+            be too heavy to handle in a consumer PC.
+          </p>
+          <p>
+            In this regard, <a href="https://spectral-edge.github.io/"> SpectralEdge </a> 
+            brings an excellent tool to start to work with a spectral sensor and analyse 
+            hyperspectral cubes right away. Combining the power of an edge device with 
+            dashboard templates, python notebooks and a setof analysis tools that run in 
+            the cloud, you can take the most of your hyperspectral sensors.
+          </p>
+        </div>
+      </section>
+        
+    <footer>
+      <h2>Enquiries</h2>
+      <p>
+        <a
+          href="mailto:contact@abraiasoftware.com?subject=SpectralEdge further information&amp;body=Send me further information on SpectralEdge."
+          >Send us an email
+        </a>
+        for further requests.
+      </p>
+      <p>* One year storage</p>
+    </footer>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LWBWE02746"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-LWBWE02746");
+    </script>
+  </body>
+</html>
