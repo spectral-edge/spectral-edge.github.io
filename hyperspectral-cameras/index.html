@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyperspectral Cameras</title>
+    <meta
+      name="description"
+      content="Hyperspectral cameras in 2024, a quick guide."
+    />
+    <link rel="canonical" href="https://spectral-edge.github.io/hyperspectral-sensor/" />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container">
+        <h1>Hyperspectral Cameras</h1>
+        <p>
+            HSI cameras in 2024, a quick guide
+        </p>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <h2>What is a hyperspectra camera</h2>
+        <p> 
+          Hyperspectral imaging (HSI) cameras break down the spectrum into numerous 
+          narrow bands, enabling the detailed analysis of materials based on their 
+          spectral signatures. This technology provides a comprehensive understanding 
+          of the composition and characteristics of the imaged objects or surfaces. 
+        </p>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <h2>Camera Size, Weight, and cost</h2>
+        <p>
+          Size and weight are largely dependent on the optical arrangement used to 
+          separate the spectral bands. While some HSI cameras tend to be much bigger 
+          and heavier than standard RGB cameras, due to bulkier optical systems with 
+          prisms and gratings, and even mechanical scanners; there are also systems 
+          with sensor-integrated filters that are as compact and light as their RGB 
+          counterparts.   Like in traditional cameras, the cost of a HSI camera depends 
+          on two main factors: the optics and the sensor. Bulky optics around a prism 
+          or grating are more expensive than sensor-integrated filters. As well sensor 
+          in the SWIR range like InGaAs are much more expensive than CMOS sensors in 
+          the visible-NIR spectrum.
+        </p>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <h2>Acquisition Speed: Snapshot or Scanning</h2>
+        <p>
+            Hyperspectral data acquisition can occur through two primary methods: 
+            snapshot (e.g. PhotonFocus spectral cameras) or scanning (e.g. Specim 
+            spectral cameras). Snapshot acquisition is characteristic of sensor-integrated 
+            cameras and captures the entire hyperspectral cube in one instant, suitable 
+            for dynamic scenes. Scanning is characteristic of HSI cameras with optics based 
+            on a prism or grating and involves sequentially capturing spectral bands, 
+            offering better spectral performance. 
+        </p>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <h2>Spectral and Spatial Resolution</h2>
+        <p>
+            While sensor-integrated filter cameras feature reduced cost, weight and size 
+            as well as snapshot and realtime acquisition capabilities that improve 
+            usability, they also involve a loss in terms of spectral resolution, spatial 
+            resolution, or both.
+        </p>
+        <p>
+            Scanning HSI cameras (e.g. Specim spectral cameras) may be bulkier and slower, 
+            but they bring exceptional spectral and spatial resolution, allowing for the 
+            capture of detailed information in both the spectral and spatial domains. High 
+            spectral resolution enables the differentiation of subtle variations in material 
+            composition, while spatial resolution adds to the clarity of images. This 
+            capability makes HSI scanning cameras a requirement for some tasks requiring a 
+            high precision in analysis and identification.
+        </p>
+      </div>
+    </section>
+    <section class="content">
+        <div class="container">
+          <h2>Image Acquisition and Processing</h2>
+          <p>
+            HSI cameras generate datacubes, three-dimensional arrays where each pixel 
+            contains spectral information, allowing users to extract meaningful insights 
+            and make informed decisions in fields ranging from agriculture and environmental 
+            monitoring to healthcare and beyond. However efficient datacube acquisition and 
+            processing can be challenging. To start with, the need of datacube 
+            reconstruction and sometimes calibration makes putting a HSI camera to work much 
+            harder compared to a standard RGB camera. And this is generally true for any 
+            type of HSI camera. 
+          </p>
+          <p>
+            But difficulties don’t stop here. As our eyes can only see trichromatic 
+            representations, visualization and analysis of HSI data is not straightforward. 
+            Tailored processing and ML approaches are needed that cater to the additional 
+            dimensionality of the data. As if that weren't enough, datacubes are usually 
+            much heavier than RGB images.
+          </p>
+          <p>
+            All of this hampers the development and deployment of solutions based on 
+            hyperspectral cameras. In this regard, 
+            <a href="https://spectral-edge.github.io/"> SpectralEdge </a> brings a cost 
+            effective solution that provides state of the art hardware and software tools 
+            together with a cloud API to greatly smooth the test, development and 
+            deployment of solutions that benefit from the insights delivered by HSI cameras.
+          </p>
+        </div>
+      </section>
+        
+    <footer>
+      <h2>SpectralEdge</h2>
+      <p>  
+        <a href="https://spectral-edge.github.io/"> More info on SpectralEdge </a> 
+      </p>
+    </footer>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LWBWE02746"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-LWBWE02746");
+    </script>
+  </body>
+</html>
